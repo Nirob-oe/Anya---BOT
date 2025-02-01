@@ -70,7 +70,7 @@ const time = process.uptime() ,
   } else {
     var id = k
   }
-  const loz = ["https://i.imgur.com/8skA3fN.jpeg","]
+  const loz = ["https://i.imgur.com/8skA3fN.jpeg","https://i.imgur.com/vlqPkMm.png","https://i.imgur.com/VAIkYcg.png","https://i.imgur.com/X95j64M.png"]
     const lengthchar = (await axios.get('https://raw.githubusercontent.com/mraikero-01/saikidesu_data/main/imgs_data2.json')).data
     console.log(lengthchar.length)
   const Canvas = require('canvas');
