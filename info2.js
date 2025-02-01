@@ -29,7 +29,7 @@ var juswa = moment.tz("Asia/Dhaka").format("『D/MM/YYYY』 【hh:mm:ss】");
 var callback = () => api.sendMessage({body:`
 --------------------------------------------
 𝐍𝐚𝐦𝐞       : ARIYAN
-𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : sung jin woo
+𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 : Ariyan Ahmed 
 𝐑𝐞𝐥𝐢𝐠𝐢𝐨𝐧   : 𝐈𝐬𝐥𝐚𝐦
 𝐏𝐞𝐫𝐦𝐚𝐧𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: RAJSHAHI
 𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐀𝐝𝐝𝐫𝐞𝐬𝐬: RAJSHAHI
