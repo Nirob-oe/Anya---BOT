@@ -4,15 +4,15 @@ const path = require('path');
 
 module.exports = {
   config: {
-    name: "bot",
+    name: "anya",
     version: "1.0.0",
     permission: 0,
     credits: "nayan",
-    description: "talk with bot",
+    description: "talk with anya",
     prefix: 'awto',
     category: "talk",
     usages: "hi",
-    cooldowns: 5,
+    cooldowns: 8,
   },
 
   handleReply: async function ({ api, event }) {
@@ -67,9 +67,9 @@ module.exports = {
           "আহ শোনা আমার আমাকে এতো ডাক্তাছো কেনো আসো বুকে আশো🥱",
           "হুম জান তোমার অইখানে উম্মমাহ😷😘",
           "আসসালামু আলাইকুম বলেন আপনার জন্য কি করতে পারি",
-          "আমাকে এতো না ডেকে বস নয়নকে একটা গফ দে 🙄",
-          "jang hanga korba",
-          "jang bal falaba🙂"
+          "আমাকে এতো না ডেকে Muri kha bose bose 🙄",
+          "jan hanga korba",
+          "bol🙂"
         ];
         const name = await Users.getNameUser(events.senderID);
         const rand = greetings[Math.floor(Math.random() * greetings.length)];
