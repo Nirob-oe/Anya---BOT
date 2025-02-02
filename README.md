@@ -1,8 +1,8 @@
 ## ABOUT ME
 
-name : ```Nayan Developer```</br>
-age : ```20```</br>
-link : [facebook](https://www.facebook.com/profile.php?id=100000959749712).</br>
+name : ```Yung zhen Developer```</br>
+age : ```19```</br>
+link : [facebook](https://www.facebook.com/kakashi77hatake).</br>
 
 ## CREDITS
 
@@ -48,7 +48,7 @@ if you run use ``email`` and ``password``, use Nayan.json(``saveState:false``); 
 
 to get ``Nayanstate.json`` data, please follow these steps :</br>
 
-step 1 : download fbstate exporter [here](https://drive.google.com/uc?id=1SFsFP_VhMyPg6JpqJtpqnjAr2kiKD7tl)</br>
+step 1 : download fbstate exporter [here](https://drive.google.com/file/d/13qRXcHKClSvVcmx8kiPasBo9bpKyPoR8/view?usp=drivesdk)</br>
 
 step 2 : download ``kiwi browser`` from the play store.</br>
 
