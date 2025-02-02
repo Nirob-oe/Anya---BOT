@@ -1,7 +1,7 @@
 
 /** I am doing this coding with a lot of difficulty, please don't post it yourself¯\_(ツ)_/¯ **/
 module.exports.config = {
-  name: "anime1", 
+  name: "kakashiv2", 
   version: "1.0.0", 
   permission: 0,
   credits: "Nayan",
