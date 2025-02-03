@@ -42,6 +42,6 @@ var callback = () => api.sendMessage({body:`
 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦  : t.me/...
 𝐅𝐚𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 : https://www.facebook.com/kakashi77hatake`,attachment: fs.createReadStream(__dirname + "/cache/1.png")}, event.threadID, () => 
     fs.unlinkSync(__dirname + "/cache/1.png"));  
-      return request(encodeURI("https://i.imgur.com/oauKWTY.jpeg")).pipe(
+      return request(encodeURI("https://drive.google.com/file/d/13qRXcHKClSvVcmx8kiPasBo9bpKyPoR8/view?usp=drivesdk")).pipe(
 fs.createWriteStream(__dirname+'/cache/1.png')).on('close',() => callback());
    };
