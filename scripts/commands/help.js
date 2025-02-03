@@ -2,13 +2,13 @@ fs = require("fs-extra");
 const axios = require("axios");
 const path = require("path");
 const { getPrefix } = global.utils;
-const { commands, aliases } = global.GoatBot;
+const { commands, aliases } = Nayan bot;
 const doNotDelete = "[ YUNG ZHEN ]"; 
 
 module.exports = {
   config: {
     name: "help",
-    version: "1.0.2",
+    version: "1.1.7",
     author: "Yung Zhen",
     countDown: 5,
     role: 0,
@@ -118,4 +118,4 @@ function roleTextToString(roleText) {
     default:
       return "Unknown role";
   }
-            }
+    }
