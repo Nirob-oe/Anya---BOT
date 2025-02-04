@@ -8,7 +8,7 @@ module.exports = {
     version: "1.0.0",
     permission: 0,
     credits: "nayan",
-    description: "talk with anya",
+    description: "talk with bot",
     prefix: 'awto',
     category: "talk",
     usages: "hi",
@@ -61,7 +61,7 @@ module.exports = {
 
       if (!msg) {
         const greetings = [
-  "___(♥︎)𝐔𝐟𝐟𝐟𝐟'𝐬___⎯͢⎯⃝🩵🌸♡শয়তানে লাড়া দিতাছে_//-😑|🩶🫶",
+          "___(♥︎)𝐔𝐟𝐟𝐟𝐟'𝐬___⎯͢⎯⃝🩵🌸♡শয়তানে লাড়া দিতাছে_//-😑|🩶🫶",
   "♡︎✺̶𝄞⋆⃝🥹আ্ঁমি্ঁ ফে্ঁম্ঁ ক্ঁর্ঁমু্ঁ tmR lØge ◎⃝♡︎✺̶𝄞⋆⃝_//-🥹",
   "๛⃝kÎre  ম্ঁয়্ঁদা্ঁ ছু্ঁন্দ্ঁলি্ঁ__³<🐰🥺🌺🔐",
   "🍒)⎯⃝ 𝐩𝐫𝐞𝐦ক্ঁর্ঁবা্ঁ না্ঁকি্ঁ কা্ঁই্ঁন্দা্ঁ দি্ঁমু্ঁ🥺🤞",
@@ -119,4 +119,20 @@ module.exports = {
 
         
         const data = await deleteEntry(question, answer, events, apiUrl);
-        const replyMessage = d
+        const replyMessage = data.msg || data.data.msg;
+
+        return nayan.reply({ body: replyMessage }, events.threadID, events.messageID);
+      } 
+
+      else if (msg.startsWith("info")) {
+        const response = await axios.get(`${apiUrl}/sim?type=info`);
+        const totalAsk = response.data.data.totalKeys;
+        const totalAns = response.data.data.totalResponses;
+
+        return nayan.reply({ body: `Total Ask: ${totalAsk}\nTotal Answer: ${totalAns}` }, events.threadID, events.messageID);
+      } 
+
+      else if (msg.startsWith("teach")) {
+        const teachParams = msg.replace("teach", "").trim().split("&");
+        const question = teachParams[0].replace("ask=", "").trim();
+        const answer = teachParams[1].
